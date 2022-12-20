@@ -1,0 +1,208 @@
+#div-explorer ul{
+    padding-left: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#div-explorer li{
+    padding: 5px;
+    margin: 5px;
+    width: calc(100% - 20px);
+    cursor: pointer;
+    border-radius: 4px;
+    list-style-type: none;
+}
+
+#div-explorer li:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+body{
+    margin: 0;
+}
+
+#div-explorer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: calc(90%);
+    height: calc(85vmin);
+    margin: 5%;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+#div-explorer .div-header{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#div-explorer .div-header .div-nav{
+    display: flex;
+    width: calc(100%);
+    height: 40px;
+    border-radius: 4px 0 0 0;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#div-explorer .div-header .div-explorer-close{
+    position: relative;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 0 4px 0 0;
+    background: rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+#div-explorer .div-header .div-explorer-close img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#div-explorer .div-content{
+    display: flex;
+
+    width: 100%;
+    height: calc(100%);
+    overflow-y: scroll;
+}
+
+#div-explorer .div-content .div-tree{
+    width: 40%;
+    padding: 0 20px;
+    height: calc(100% - 40px);
+    overflow-y: scroll;
+}
+
+#div-explorer .div-content .div-spacer{
+    width: 1px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#div-explorer .div-content .div-items{
+    display: grid;
+    background: rgba(65, 105, 225, 0.1);
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    grid-auto-rows: 200px;
+    gap: 10px;
+    padding: 10px;
+    width: 60%;
+    height: calc(100% - 20px);
+    overflow-y: scroll;
+}
+
+#div-explorer .div-content .div-items .gallery-item{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+
+#div-explorer .div-content .div-items .gallery-item:hover{
+    cursor: pointer;
+    background: royalblue;
+}
+
+#div-explorer .gallery-item img{
+    border-radius: 4px 4px 0 0;
+    background: #fff;
+    height: 70%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+#div-explorer .gallery-item .div-info{
+    display: flex;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 4px 4px;
+    background: rgba(255, 255, 255, 0.8);
+    height: 30%;
+}
+
+
+#div-explorer .gallery-item .div-info label{
+    display: flex;
+    padding: 0 5px;
+//background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    border-radius: 0 0 0 4px;
+    height: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#div-explorer .gallery-item .div-info .div-selection{
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 0 0 4px 0;
+    height: calc(100%);
+}
+
+#div-explorer .icon{
+    background: transparent !important;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+
+#div-explorer .div-footer{
+    padding: 0 20px;
+    display: flex;
+
+    align-items: center;
+    width: calc(100% - 40px);
+    height: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#div-explorer .div-footer .div-selected-files{
+    width: 100%;
+}
+
+#div-explorer .div-footer .div-action-buttons{
+
+}
+
+#div-explorer .div-footer .div-action-buttons button{
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    padding: 0 20px;
+    color: #ffffff;
+    background: royalblue;
+}
+
+#div-explorer .customized-span-tag{
+    cursor: pointer;
+    color: royalblue;
+}
+
+#div-explorer .customized-span-tag:hover{
+    color: blue;
+}
