@@ -81,7 +81,7 @@ body{
 
     width: 100%;
     height: calc(100%);
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
 #div-explorer .div-content .div-tree{
@@ -205,4 +205,18 @@ body{
 
 #div-explorer .customized-span-tag:hover{
     color: blue;
+}
+
+
+#span-url{
+    cursor: pointer;
+}
+
+#span-url span{
+    //color: #003280;
+    color: #000;
+}
+
+#span-url span:hover{
+    //color: #0070ff;
 }
